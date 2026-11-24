@@ -1,0 +1,8 @@
+
+Link Gdrive Folder : https://drive.google.com/drive/folders/1MsLVkA1vJhW-bdysVtr7uwrPAy52ieFn?usp=sharing
+
+keterangan 
+"best.pth" merupakan model yang simpan saat epoch menunjukan performa terbaik untuk seluruh epoch
+"checkpoint.pth" model dengan epoch terakhir
+
+jadi, ada 2 versi.
