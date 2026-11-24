@@ -1,1 +1,1 @@
-# liver-tumour-segmentatio-atlas-project-ccub
+# liver-tumour-segmentation-atlas-project-ccub
