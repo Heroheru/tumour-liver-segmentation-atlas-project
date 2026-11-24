@@ -2,6 +2,8 @@
 
 # ATLAS Project: Liver and Liver-Tumour Segmentation in T1 CE-MRI
 
+![alt text](visualization_result_ik_snap.png)
+
 A 3D segmentation pipeline written from scratch in PyTorch, from preprocessing to evaluation, for the ATLAS challenge (liver and liver-tumour segmentation in contrast-enhanced MRI of patients with unresectable hepatocellular carcinoma).
 
 The pipeline uses the configuration that nnU-Net derived for this dataset (target spacing, patch size, network settings) as a **reference**, but all code was written and trained independently, so that every step is understood. A second network (Res-SE blocks + multi-scale attention) was implemented and compared with the baseline 3D U-Net.
@@ -87,6 +89,11 @@ python calculate_metrics.py --segmentation_folder pred/resmab --label_folder eva
 ```
 
 ## Method
+
+![alt text](3d_rmau_net.png)
+
+
+![alt text](3d_unet.png)
 
 **Preprocessing.** Crop to the non-zero region, resample to 3.0 × 1.04 × 1.04 mm (z, y, x; image: cubic spline, mask: nearest neighbour), per-image z-score normalisation.
 
